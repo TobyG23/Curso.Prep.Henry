@@ -189,19 +189,28 @@ else {
   return "Soy falso"
 }
 }
-//console.log(esPrimo(7))
+
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
+  //Escribe tu código aquí  
+let table = 6 
+  for ( i = 1; i<=10; i++){
+table = 6 * i;
+console.log(table + "")
 }
-
+}
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero >= 100 && numero <= 999) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
+console.log(tieneTresDigitos(1000))
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
